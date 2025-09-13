@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block css %}
+<link rel="stylesheet" href='{% static "deps/css/my_footer_css.css" %}'>
+{% endblock %}
+
+{% block content %}
+<div class="m-5 p-4 bg-white custom-shadow rounded">
+    <h2><strong>{{ content }}</strong></h2>
+    <p><strong>{% trans "Адрес:" %}</strong> {{ address }}</p>
+    <p><strong>{% trans "Телефон:" %}</strong> {{ phone }}</p>
+    <p><strong>{% trans "Email:" %}</strong> {{ email }}</p>
+
+</div>
+{% endblock %}

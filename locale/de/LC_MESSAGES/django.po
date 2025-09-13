@@ -1,0 +1,227 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-10 23:21+0200\n"
+"PO-Revision-Date: 2025-09-08 12:56+0200\n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\ad_agency\settings.py:129
+msgid "Русский"
+msgstr "Russisch"
+
+#: .\ad_agency\settings.py:130
+msgid "English"
+msgstr "Englisch"
+
+#: .\ad_agency\settings.py:131
+msgid "Deutsch"
+msgstr "Deutsch"
+
+#: .\main\templates\main\contacts.html:12
+msgid "Адрес:"
+msgstr "Adresse:"
+
+#: .\main\templates\main\contacts.html:13
+msgid "Телефон:"
+msgstr "Telefon:"
+
+#: .\main\templates\main\contacts.html:14
+msgid "Email:"
+msgstr "E-Mail:"
+
+#: .\main\templates\main\delivery_payment.html:13
+msgid "Доставка"
+msgstr "Lieferung"
+
+#: .\main\templates\main\delivery_payment.html:16
+msgid "Оплата"
+msgstr "Bezahlung"
+
+#: .\main\templatetags\breadcrumbs.py:14 .\services\apps.py:8
+#: .\templates\base.html:100
+msgid "Услуги"
+msgstr "Services"
+
+#: .\main\templatetags\breadcrumbs.py:15 .\main\views.py:27
+#: .\templates\base.html:50
+msgid "О компании"
+msgstr "Über uns"
+
+#: .\main\templatetags\breadcrumbs.py:16 .\templates\base.html:59
+msgid "Контакты"
+msgstr "Kontakte"
+
+#: .\main\templatetags\breadcrumbs.py:17 .\templates\base.html:56
+msgid "Доставка и оплата"
+msgstr "Versand & Zahlung"
+
+#: .\main\templatetags\breadcrumbs.py:18 .\main\views.py:37
+#: .\templates\base.html:53
+msgid "Портфолио"
+msgstr "Portfolio"
+
+#: .\main\templatetags\breadcrumbs.py:57 .\templates\base.html:47
+msgid "Главная"
+msgstr "Start"
+
+#: .\main\views.py:12
+msgid "RuAd - Главная"
+msgstr "RuAd - Start"
+
+#: .\main\views.py:13
+msgid "Рекламное агенство \"RussianAdvertising\""
+msgstr "Werbeagentur \"RussianAdvertising\""
+
+#: .\main\views.py:15
+msgid ""
+"Адрес: г. Москва, ул. Примерная, 10\n"
+"Телефон: +7 (999) 999-99-!!\n"
+"Email: info@ruad!!.ru"
+msgstr ""
+"Adresse: Moskau, Musterstraße 10\n"
+"Telefon: +7 (999) 999-99-!!\n"
+"E-Mail: info@ruad!!.ru"
+
+#: .\main\views.py:26
+msgid "RuAd - О компании"
+msgstr "RuAd - Über uns"
+
+#: .\main\views.py:28
+msgid "Текст о том, почему этот магазин такой классный"
+msgstr "Text darüber, warum dieses Geschäft so großartig ist"
+
+#: .\main\views.py:36
+msgid "RuAd - Портфолио"
+msgstr "RuAd - Portfolio"
+
+#: .\main\views.py:38
+msgid "Данная страница находится в разработке!"
+msgstr "Diese Seite befindet sich in der Entwicklung!"
+
+#: .\main\views.py:45
+msgid "RuAd - Доставка и оплата"
+msgstr "RuAd - Versand & Zahlung"
+
+#: .\main\views.py:46
+msgid "Информация о доставке и оплате"
+msgstr "Informationen zu Lieferung und Bezahlung"
+
+#: .\main\views.py:47
+msgid ""
+"Мы доставляем по всей России. Сроки зависят от региона. Возможен самовывоз"
+msgstr ""
+"Wir liefern in ganz Russland. Lieferzeiten hängen von der Region ab. "
+"Selbstabholung möglich"
+
+#: .\main\views.py:48
+msgid ""
+"Оплата возможна картой, наличными при получении, банковским переводом, через "
+"СПБ."
+msgstr ""
+"Bezahlung möglich mit Karte, bar bei Lieferung, Banküberweisung, über SPB."
+
+#: .\main\views.py:55
+msgid "RuAd - Контакты"
+msgstr "RuAd - Kontakte"
+
+#: .\main\views.py:56
+msgid "Контактная информация"
+msgstr "Kontaktinformationen"
+
+#: .\main\views.py:57
+msgid "г. Москва, ул. Примерная, 10"
+msgstr "Moskau, Musterstraße 10"
+
+#: .\main\views.py:58
+msgid "+7 (999) 999-99-!!"
+msgstr "+7 (999) 999-99-!!"
+
+#: .\main\views.py:59
+msgid "info@ruad!!.ru"
+msgstr "info@ruad!!.ru"
+
+#: .\services\models.py:6 .\services\models.py:24
+msgid "Название"
+msgstr "Name"
+
+#: .\services\models.py:7 .\services\models.py:25
+msgid "URL"
+msgstr "URL"
+
+#: .\services\models.py:11
+msgid "Категорию"
+msgstr "Kategorie"
+
+#: .\services\models.py:12
+msgid "Категории"
+msgstr "Kategorien"
+
+#: .\services\models.py:26
+msgid "Описание"
+msgstr "Beschreibung"
+
+#: .\services\models.py:27
+msgid "Изображение"
+msgstr "Bild"
+
+#: .\services\models.py:28
+msgid "Категория"
+msgstr "Kategorie"
+
+#: .\services\models.py:33
+msgid "Вид"
+msgstr "Typ"
+
+#: .\services\models.py:34
+msgid "Виды"
+msgstr "Typen"
+
+#: .\services\templates\services\catalog.html:12
+#, python-format
+msgid ""
+"\n"
+"            Результаты поиска по запросу %(query)s\n"
+"        "
+msgstr ""
+"\n"
+"            Suchergebnisse für die Anfrage %(query)s\n"
+"        "
+
+#: .\services\templates\services\catalog.html:19
+msgid "По запросу ничего не найдено"
+msgstr "Keine Ergebnisse für die Anfrage gefunden"
+
+#: .\services\templates\services\catalog.html:71
+msgid "Назад"
+msgstr "Zurück"
+
+#: .\services\templates\services\catalog.html:83
+msgid "Следующая"
+msgstr "Weiter"
+
+#: .\services\templates\services\types.html:38
+msgid "Закрыть"
+msgstr "Schließen"
+
+#: .\services\templates\services\types.html:42
+msgid "Изображение 1"
+msgstr "Bild 1"
+
+#: .\services\views.py:26
+msgid "RuAd - Услуги"
+msgstr "RuAd - Services"
+
+#: .\templates\base.html:64
+msgid "Поиск"
+msgstr "Suche"
+
+#: .\templates\base.html:106
+msgid "Все услуги"
+msgstr "Alle Services"

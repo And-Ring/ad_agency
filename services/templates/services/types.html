@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card mb-4 custom-shadow">
+        <div class="row g-0">
+            <!-- Миниатюры -->
+            <div class="col-md-4">
+
+                {% if types.image %}
+                    <img src="{{ types.image.url }}"
+                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                {% else %}
+                    <img src='{% static "deps/images/Not found image.png" %}' class="card-img-top" alt="{{ types.name }}">
+                {% endif %}
+
+            </div>
+
+            <!-- Описание -->
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ types.name }}</h5>
+                    <p class="card-text">{{ types.description }}</p>
+                </div>
+            </div>
+
+        </div>
+            <!-- Увеличить изображение в модальном окне -->
+            <div class="modal fade" id="imageModal1" tabindex="-1"
+                 aria-labelledby="imageModal1Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imageModal1Label">{{ types.name }}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label='{% trans "Закрыть" %}'></button>
+                        </div>
+                        <div class="modal-body">
+                            {% if types.image %}
+                                <img src="{{ types.image.url }}" class="img-fluid" alt="{% trans 'Изображение 1' %}">
+                            {% endif %}
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+{% endblock %}

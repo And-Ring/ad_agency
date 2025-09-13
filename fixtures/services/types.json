@@ -1,0 +1,206 @@
+[
+{
+  "model": "services.types",
+  "pk": 1,
+  "fields": {
+    "name": "Вывески",
+    "name_ru": "Вывески",
+    "name_en": "Signs",
+    "name_de": "Schilder",
+    "slug": "signs",
+    "description": "Рекламные вывески – это лицо вашего бизнеса! Яркие, стильные, запоминающиеся – они привлекают внимание и подчеркивают ваш бренд. Мы создаем вывески, которые работают на вас 24/7, гарантируя видимость и узнаваемость.",
+    "description_ru": "Рекламные вывески – это лицо вашего бизнеса! Яркие, стильные, запоминающиеся – они привлекают внимание и подчеркивают ваш бренд. Мы создаем вывески, которые работают на вас 24/7, гарантируя видимость и узнаваемость.",
+    "description_en": "Advertising Signs – the face of your business! Bright, stylish, and memorable, they grab attention and highlight your brand. We create signs that work for you 24/7, ensuring visibility and recognition.",
+    "description_de": "Werbeschilder – das Gesicht Ihres Unternehmens! Hell, stilvoll und einprägsam, ziehen sie Aufmerksamkeit auf sich und betonen Ihre Marke. Wir gestalten Schilder, die rund um die Uhr für Sie arbeiten und Sichtbarkeit sowie Wiedererkennung garantieren.",
+    "image": "services_images/Signs.jpg",
+    "category": 3
+  }
+},
+{
+  "model": "services.types",
+  "pk": 2,
+  "fields": {
+    "name": "Короба",
+    "name_ru": "Короба",
+    "name_en": "Boxes",
+    "name_de": "Kästen",
+    "slug": "boxes",
+    "description": "Световые рекламные короба – отличный способ сделать вашу рекламу заметной даже в темное время суток. Мы создаем современные конструкции с качественными материалами и эффектной подсветкой. Ваша реклама будет сиять на фоне конкурентов!",
+    "description_ru": "Световые рекламные короба – отличный способ сделать вашу рекламу заметной даже в темное время суток. Мы создаем современные конструкции с качественными материалами и эффектной подсветкой. Ваша реклама будет сиять на фоне конкурентов!",
+    "description_en": "Lightbox Signs – a perfect way to make your advertising stand out even at night. We create modern structures using high-quality materials and impressive lighting. Your advertisement will shine brighter than the ads of your competitors!",
+    "description_de": "Leuchtkastenwerbung – eine hervorragende Möglichkeit, Ihre Werbung auch nachts sichtbar zu machen. Wir entwerfen moderne Konstruktionen mit hochwertigen Materialien und effektvoller Beleuchtung. Ihre Werbung wird im Vergleich zur Konkurrenz strahlen!",
+    "image": "services_images/Light_Boxes.jpg",
+    "category": 3
+  }
+},
+{
+  "model": "services.types",
+  "pk": 3,
+  "fields": {
+    "name": "Объемные буквы",
+    "name_ru": "Объемные буквы",
+    "name_en": "3D Letters",
+    "name_de": "3D-Buchstaben",
+    "slug": "3d-letters",
+    "description": "Объемные буквы – это стиль, престиж и эксклюзивность. Они придают рекламе выразительность и статус. Мы изготавливаем буквы разных форм и размеров, с подсветкой и без, чтобы ваш бизнес выделялся в любом пространстве. Если понадобится доработка, дайте знать!",
+    "description_ru": "Объемные буквы – это стиль, престиж и эксклюзивность. Они придают рекламе выразительность и статус. Мы изготавливаем буквы разных форм и размеров, с подсветкой и без, чтобы ваш бизнес выделялся в любом пространстве. Если понадобится доработка, дайте знать!",
+    "description_en": "3D Letters – a symbol of style, prestige, and exclusivity. They add expressiveness and status to your advertising. We produce letters of various shapes and sizes, with or without illumination, so your business stands out in any space.",
+    "description_de": "3D-Buchstaben – ein Ausdruck von Stil, Prestige und Exklusivität. Sie verleihen Ihrer Werbung Ausdruckskraft und Status. Wir fertigen Buchstaben in unterschiedlichen Formen und Größen, mit oder ohne Beleuchtung, damit Ihr Unternehmen in jedem Umfeld hervorsticht.",
+    "image": "services_images/3D_Letters.jpg",
+    "category": 3
+  }
+},
+{
+  "model": "services.types",
+  "pk": 4,
+  "fields": {
+    "name": "Логотипы на стену",
+    "name_ru": "Логотипы на стену",
+    "name_en": "Wall Logos",
+    "name_de": "Wandlogos",
+    "slug": "wall-logos",
+    "description": "Логотипы на стену — стильное решение для вашего офиса. Подчеркнем уникальность вашей компании с нашим дизайном.",
+    "description_ru": "Логотипы на стену — стильное решение для вашего офиса. Подчеркнем уникальность вашей компании с нашим дизайном.",
+    "description_en": "Wall Logos — a stylish solution for your office. We highlight the uniqueness of your company with our design.",
+    "description_de": "Wandlogos — eine stilvolle Lösung für Ihr Büro. Mit unserem Design unterstreichen wir die Einzigartigkeit Ihres Unternehmens.",
+    "image": "services_images/Wall_Logos.jpg",
+    "category": 4
+  }
+},
+{
+  "model": "services.types",
+  "pk": 5,
+  "fields": {
+    "name": "Неоновые вывески для витрин",
+    "name_ru": "Неоновые вывески для витрин",
+    "name_en": "Neon Signs for Shop Windows",
+    "name_de": "Neon-Schaufensterschilder",
+    "slug": "neon-signs-for-shop-windows",
+    "description": "Неоновые вывески для витрин — яркий акцент вашего бизнеса. Привлекаем внимание и создаем настроение.",
+    "description_ru": "Неоновые вывески для витрин — яркий акцент вашего бизнеса. Привлекаем внимание и создаем настроение.",
+    "description_en": "Neon Signs for Shop Windows — a bright highlight of your business. We attract attention and create the right mood.",
+    "description_de": "Neon-Schaufensterschilder — ein leuchtender Akzent für Ihr Geschäft. Wir ziehen die Aufmerksamkeit auf uns und schaffen Stimmung.",
+    "image": "services_images/Neon_Signs.jpg",
+    "category": 5
+  }
+},
+{
+  "model": "services.types",
+  "pk": 6,
+  "fields": {
+    "name": "Информационные стенды с карманами",
+    "name_ru": "Информационные стенды с карманами",
+    "name_en": "Information Stands with Pockets",
+    "name_de": "Informationsständer mit Taschen",
+    "slug": "information-stands-with-pockets",
+    "description": "Информационные стенды с карманами — это удобство и порядок. Легко размещайте материалы и делитесь информацией.",
+    "description_ru": "Информационные стенды с карманами — это удобство и порядок. Легко размещайте материалы и делитесь информацией.",
+    "description_en": "Information Stands with Pockets — convenience and order. Easily display materials and share information.",
+    "description_de": "Informationsständer mit Taschen — praktisch und übersichtlich. Präsentieren Sie Ihre Materialien ganz einfach und teilen Sie Informationen.",
+    "image": "services_images/Display_Stands.jpg",
+    "category": 6
+  }
+},
+{
+  "model": "services.types",
+  "pk": 7,
+  "fields": {
+    "name": "Таблички на дверь",
+    "name_ru": "Таблички на дверь",
+    "name_en": "Door Signs",
+    "name_de": "Türschilder",
+    "slug": "door-signs",
+    "description": "Таблички на дверь — стильное и информативное дополнение интерьера. Четко обозначим важные зоны.",
+    "description_ru": "Таблички на дверь — стильное и информативное дополнение интерьера. Четко обозначим важные зоны.",
+    "description_en": "Door Signs — a stylish and informative addition to your interior. We clearly mark important areas.",
+    "description_de": "Türschilder — eine stilvolle und informative Ergänzung Ihrer Innenräume. Wir kennzeichnen wichtige Bereiche klar und deutlich.",
+    "image": "services_images/Door_Signs.jpg",
+    "category": 7
+  }
+},
+{
+  "model": "services.types",
+  "pk": 8,
+  "fields": {
+    "name": "Печать на баннерах",
+    "name_ru": "Печать на баннерах",
+    "name_en": "Banner Printing",
+    "name_de": "Bannerdruck",
+    "slug": "banner-printing",
+    "description": "Печать на баннерах — яркая реклама для вашего бизнеса. Качественная и долговечная печать.",
+    "description_ru": "Печать на баннерах — яркая реклама для вашего бизнеса. Качественная и долговечная печать.",
+    "description_en": "Banner Printing — bright advertising for your business. High-quality and durable printing.",
+    "description_de": "Bannerdruck — auffällige Werbung für Ihr Unternehmen. Hochwertiger und langlebiger Druck.",
+    "image": "services_images/Banner_Printing.jpg",
+    "category": 8
+  }
+},
+{
+  "model": "services.types",
+  "pk": 9,
+  "fields": {
+    "name": "Фрезеровка композита",
+    "name_ru": "Фрезеровка композита",
+    "name_en": "Composite Milling",
+    "name_de": "Composite-Fräsen",
+    "slug": "composite-milling",
+    "description": "Фрезеровка композита — точность и надежность. Создаем четкие и долговечные формы.",
+    "description_ru": "Фрезеровка композита — точность и надежность. Создаем четкие и долговечные формы.",
+    "description_en": "Composite Milling — Precision and Reliability. We create sharp and durable shapes.",
+    "description_de": "Composite-Fräsen – Präzision und Zuverlässigkeit. Wir erstellen klare und langlebige Formen.",
+    "image": "services_images/Composite_Milling.jpg",
+    "category": 9
+  }
+},
+{
+  "model": "services.types",
+  "pk": 10,
+  "fields": {
+    "name": "Гравировка на жетонах и бирках",
+    "name_ru": "Гравировка на жетонах и бирках",
+    "name_en": "Engraving on Tokens and Tags",
+    "name_de": "Gravur auf Marken und Anhängern",
+    "slug": "engraving-on-tokens-and-tags",
+    "description": "Гравировка на жетонах и бирках — персонализация с точностью. Детальная гравировка для уникальных решений.",
+    "description_ru": "Гравировка на жетонах и бирках — персонализация с точностью. Детальная гравировка для уникальных решений.",
+    "description_en": "Engraving on Tokens and Tags — personalization with precision. Detailed engraving for unique solutions.",
+    "description_de": "Gravur auf Marken und Anhängern — Personalisierung mit Präzision. Detaillierte Gravur für einzigartige Lösungen.",
+    "image": "services_images/Engraving.jpg",
+    "category": 10
+  }
+},
+{
+  "model": "services.types",
+  "pk": 11,
+  "fields": {
+    "name": "Световые панели Crystal",
+    "name_ru": "Световые панели Crystal",
+    "name_en": "Crystal Light Panels",
+    "name_de": "Crystal-Leuchtplatten",
+    "slug": "crystal-light-panels",
+    "description": "Световые панели Crystal — элегантный и современный способ привлечь внимание. Стиль и яркость в одном решении.",
+    "description_ru": "Световые панели Crystal — элегантный и современный способ привлечь внимание. Стиль и яркость в одном решении.",
+    "description_en": "Crystal Light Panels — an elegant and modern way to attract attention. Style and brightness in one solution.",
+    "description_de": "Crystal-Leuchtplatten — eine elegante und moderne Möglichkeit, Aufmerksamkeit zu erregen. Stil und Helligkeit in einer Lösung.",
+    "image": "services_images/Light_Panels.jpg",
+    "category": 11
+  }
+},
+{
+  "model": "services.types",
+  "pk": 12,
+  "fields": {
+    "name": "Монтаж вывесок",
+    "name_ru": "Монтаж вывесок",
+    "name_en": "Sign Installation",
+    "name_de": "Schildermontage",
+    "slug": "sign-installation",
+    "description": "Монтаж вывесок — профессиональная установка рекламных конструкций. Надежность и аккуратность в каждом проекте.",
+    "description_ru": "Монтаж вывесок — профессиональная установка рекламных конструкций. Надежность и аккуратность в каждом проекте.",
+    "description_en": "Sign Installation — professional setup of advertising structures. Reliability and precision in every project.",
+    "description_de": "Schildermontage — professionelle Installation von Werbekonstruktionen. Zuverlässigkeit und Genauigkeit bei jedem Projekt.",
+    "image": "services_images/Sign_Installation.jpg",
+    "category": 12
+  }
+}
+]

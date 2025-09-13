@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+{% load services_tags %}
+{% load i18n %}
+
+
+{% block content %}
+<div class="row">
+
+    {% if request.GET.q %}
+    <h3 class="mt-4">
+        {% blocktrans with query=request.GET.q %}
+            Результаты поиска по запросу {{ query }}
+        {% endblocktrans %}
+    </h3>
+
+    {% if not services %}
+        <h2 class="mt-4">
+            {% trans "По запросу ничего не найдено" %}
+        </h2>
+    {% endif %}
+{% endif %}
+
+    {% for type in services %}
+    <!-- Карта услуг -->
+    <div class="col-lg-4 col-md-6 p-4">
+        <div class="card border-primary rounded custom-shadow">
+
+            {% if type.image %}
+                <img src='{{ type.image.url }}' class="card-img-top" alt="...">
+                {% else %}
+                <img src='{% static "deps/images/Not found image.png" %}' class="card-img-top" alt="{{ type.name }}">
+            {% endif %}
+
+            <div class="card-body">
+                <a href='{% url "services:types" category_slug=type.category.slug types_slug=type.slug %}'>
+                    <p class="card-title">
+                        {% autoescape off %}
+                            {% if type.headline %}
+                            {{ type.headline }}
+                            {% else %}
+                            {{ type.name }}
+                            {% endif %}
+                        {% endautoescape %}
+                    </p>
+                </a>
+                <p class="card-text">
+                    {% autoescape off %}
+                            {% if type.bodyline %}
+                            {{ type.bodyline|truncatechars:100 }}
+                            {% else %}
+                            {{ type.description|truncatechars:35 }}
+                            {% endif %}
+                    {% endautoescape %}
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+
+
+
+</div>
+<!-- Пагинация -->
+{% if services %}
+    <nav aria-label="Page navigation example">
+      <div class="d-flex justify-content-center my-4">
+        <ul class="pagination">
+          <li class="page-item {% if not services.has_previous %}disabled{% endif %}">
+            <a class="page-link" href="{% if services.has_previous %}?{% change_params page=services.previous_page_number %}{% else %}#{% endif %}">{% trans "Назад" %}</a>
+          </li>
+
+          {% for page in services.paginator.page_range %}
+            {% if page >= services.number|add:-2 and page <= services.number|add:2 %}
+              <li class="page-item {% if services.number == page %} active {% endif %}">
+                <a class="page-link" href="?{% change_params page=page %}">{{ page }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+
+          <li class="page-item {% if not services.has_next %}disabled{% endif %}">
+            <a class="page-link" href="{% if services.has_next %}?{% change_params page=services.next_page_number %}{% else %}#{% endif %}">{% trans "Следующая" %}</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+{% endif %}
+
+{% endblock %}
+
+
+{% comment %}
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">This is a student project. All content is fictional.</p>
+    </div>
+</footer>
+{% endblock %}
+{% endcomment %}

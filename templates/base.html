@@ -1,0 +1,157 @@
+{% load static %}
+{% load services_tags %}
+{% load breadcrumbs %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "deps/css/bootstrap/bootstrap.min.css" %}'>
+    <link rel="stylesheet" href='{% static "deps/css/my_css.css" %}'>
+
+{% comment %}
+    <!-- Стиль footer-a для главной страницы -->
+    {% block css %}
+    {% endblock %}
+{% endcomment %}
+
+    <!-- Favicons for different platforms -->
+    <link rel="apple-touch-icon" sizes="180x180" href='{% static "deps/favicon/apple-touch-icon.png" %}'>
+    <link rel="icon" type="image/png" sizes="32x32" href='{% static "deps/favicon/favicon-32x32.png" %}'>
+    <link rel="icon" type="image/png" sizes="16x16" href='{% static "deps/favicon/favicon-16x16.png" %}'>
+    <link rel="manifest" href='{% static "deps/favicon/site.webmanifest" %}'>
+    <title>{{ title }}</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3"
+                   href='{% url "main:index" %}'
+                   style="color:#cccccc;">
+                   RussianAdvertising
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark text-white me-2" href='{% url "main:index" %}'>{% trans "Главная" %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark text-white me-2" href='{% url "main:about" %}'>{% trans "О компании" %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark text-white me-2" href='{% url "main:portfolio" %}'>{% trans "Портфолио" %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark text-white me-2" href='{% url "main:delivery_payment" %}'>{% trans "Доставка и оплата" %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark text-white me-2" href='{% url "main:contacts" %}'>{% trans "Контакты" %}</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" action='{% url "catalog:search" %}' method="get">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">{% trans "Поиск" %}</button>
+                    </form>
+                    <form action="{% url 'set_language' %}" method="post" class="d-flex ms-2">
+                        {% csrf_token %}
+                        <button type="submit" name="language" value="ru" class="btn p-0 mx-1 border-0 bg-transparent">
+                            <img src="{% static 'deps/flags/ru.png' %}" alt="RU"
+                                 style="width:32px; height:24px; transition:0.2s;"
+                                 onmouseover="this.style.transform='scale(1.1)'; this.style.filter='brightness(1.2)';"
+                                 onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)';">
+                        </button>
+                        <button type="submit" name="language" value="en" class="btn p-0 mx-1 border-0 bg-transparent">
+                            <img src="{% static 'deps/flags/en.png' %}" alt="EN"
+                                 style="width:32px; height:24px; transition:0.2s;"
+                                 onmouseover="this.style.transform='scale(1.1)'; this.style.filter='brightness(1.2)';"
+                                 onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)';">
+                        </button>
+                        <button type="submit" name="language" value="de" class="btn p-0 mx-1 border-0 bg-transparent">
+                            <img src="{% static 'deps/flags/de.png' %}" alt="DE"
+                                 style="width:32px; height:24px; transition:0.2s;"
+                                 onmouseover="this.style.transform='scale(1.1)'; this.style.filter='brightness(1.2)';"
+                                 onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)';">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow-1">
+        <section>
+            <div class="container">
+                <!-- Каталог услуг с фиксированным расположением на странице -->
+                <div class="row mt-1 position-fixed z-3">
+                    <!-- Каталог -->
+                    <div class="dropdown mb-2">
+                        <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            {% trans "Услуги" %}
+                            <img class="mx-1" src='{% static "deps/icons/grid-fill.svg" %}' alt="Catalog Icon" width="16"
+                                 height="16">
+                        </button>
+
+                        <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
+                            {% tag_categories as categories %}
+                            {% for category in categories %}
+                                <li><a class="dropdown-item text-white" href="{% url 'services:category' category.slug %}">{{ category.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Контент -->
+            <div class="container">
+                <div class="row mt-1">
+                    <div class="col-lg-2">
+                        <!-- Пустой блок на Ваше усмотрение -->
+                    </div>
+                    <div class="col-lg-10">
+
+                        <!-- Контент на странице -->
+
+                        <!-- Здесь breadcrumbs (Хлебные крошки) -->
+                        {% if request.path != '/' %}
+                          <nav class="breadcrumbs mb-3">
+                            {% breadcrumbs %}
+                          </nav>
+                        {% endif %}
+
+                        {% block content %}{% endblock %}
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% comment %}
+    {% block footer %}
+    {% endblock %}
+{% endcomment %}
+
+    {% block footer %}
+    <footer class="py-3 bg-dark mt-auto">
+      <div class="container">
+        <p class="m-0 text-center text-white">This is a student project. All content is fictional.</p>
+      </div>
+    </footer>
+    {% endblock %}
+
+    <script src='{% static "deps/js/bootstrap/bootstrap.bundle.min.js" %}'></script>
+</body>
+
+</html>

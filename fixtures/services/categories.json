@@ -1,0 +1,123 @@
+[
+{
+  "model": "services.categories",
+  "pk": 2,
+  "fields": {
+    "name": "Все услуги",
+    "name_ru": "Все услуги",
+    "name_en": "All Services",
+    "name_de": "Alle Services",
+    "slug": "all-services"
+  }
+},
+{
+  "model": "services.categories",
+  "pk": 3,
+  "fields": {
+    "name": "Наружная реклама",
+    "name_ru": "Наружная реклама",
+    "name_en": "Outdoor Advertising",
+    "name_de": "Außenwerbung",
+    "slug": "outdoor-advertising"
+  }
+},
+{
+  "model": "services.categories",
+  "pk": 4,
+  "fields": {
+    "name": "Интерьерная реклама",
+    "name_ru": "Интерьерная реклама",
+    "name_en": "Interior Advertising",
+    "name_de": "Innenwerbung",
+    "slug": "interior-advertising"
+  }
+},
+{
+  "model": "services.categories",
+  "pk": 5,
+  "fields": {
+    "name": "Неоновые вывески",
+    "name_ru": "Неоновые вывески",
+    "name_en": "Neon Signs",
+    "name_de": "Neonschilder",
+    "slug": "neon-signs"
+  }
+},
+{
+  "model": "services.categories",
+  "pk": 6,
+  "fields": {
+    "name": "Информационные стенды",
+    "name_ru": "Информационные стенды",
+    "name_en": "Information Stands",
+    "name_de": "Informationsständer",
+    "slug": "information-stands"
+  }
+},
+{
+  "model": "services.categories",
+  "pk": 7,
+  "fields": {
+    "name": "Таблички",
+    "name_ru": "Таблички",
+    "name_en": "Signs",
+    "name_de": "Schilder",
+    "slug": "signs"
+  }
+},
+{
+  "model": "services.categories",
+  "pk": 8,
+  "fields": {
+    "name": "Широкоформатная печать",
+    "name_ru": "Широкоформатная печать",
+    "name_en": "Large Format Printing",
+    "name_de": "Großformatdruck",
+    "slug": "large-format-printing"
+  }
+},
+{
+  "model": "services.categories",
+  "pk": 9,
+  "fields": {
+    "name": "ЧПУ резка и фрезеровка",
+    "name_ru": "ЧПУ резка и фрезеровка",
+    "name_en": "CNC Cutting and Milling",
+    "name_de": "CNC-Schneiden und Fräsen",
+    "slug": "cnc-cutting-and-milling"
+  }
+},
+{
+  "model": "services.categories",
+  "pk": 10,
+  "fields": {
+    "name": "Маркировка и гравировка",
+    "name_ru": "Маркировка и гравировка",
+    "name_en": "Marking and Engraving",
+    "name_de": "Markierung und Gravur",
+    "slug": "marking-and-engraving"
+  }
+},
+{
+  "model": "services.categories",
+  "pk": 11,
+  "fields": {
+    "name": "Световые панели",
+    "name_ru": "Световые панели",
+    "name_en": "Light Panels",
+    "name_de": "Leuchtplatten",
+    "slug": "light-panels"
+  }
+},
+{
+  "model": "services.categories",
+  "pk": 12,
+  "fields": {
+    "name": "Монтаж наружной рекламы",
+    "name_ru": "Монтаж наружной рекламы",
+    "name_en": "Outdoor Advertising Installation",
+    "name_de": "Außenwerbung Montage",
+    "slug": "outdoor-advertising-installation"
+  }
+}
+]

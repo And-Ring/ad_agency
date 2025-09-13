@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href='{% static "deps/css/my_footer_css.css" %}'>
+{% endblock %}
+
+{% block content %}
+<div class="m-5 p-4 bg-white custom-shadow rounded">
+    <h2><strong>{{ content }}</strong></h2>
+    <p>{{ text_on_page }}</p>
+</div>
+{% endblock %}
+
+{% comment %}
+    {% block footer %}
+    <footer class="py-3 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">This is a student project. All content is fictional.</p>
+        </div>
+    </footer>
+    {% endblock %}
+{% endcomment %}
