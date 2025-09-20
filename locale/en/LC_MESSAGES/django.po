@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 23:21+0200\n"
+"POT-Creation-Date: 2025-09-14 18:09+0200\n"
 "PO-Revision-Date: 2025-09-08 12:55+0200\n"
 "Last-Translator: Your Name <you@example.com>\n"
 "Language-Team: English\n"
@@ -49,7 +49,7 @@ msgstr "Payment"
 msgid "Услуги"
 msgstr "Services"
 
-#: .\main\templatetags\breadcrumbs.py:15 .\main\views.py:27
+#: .\main\templatetags\breadcrumbs.py:15 .\main\views.py:44
 #: .\templates\base.html:50
 msgid "О компании"
 msgstr "About Us"
@@ -62,7 +62,7 @@ msgstr "Contacts"
 msgid "Доставка и оплата"
 msgstr "Delivery & Payment"
 
-#: .\main\templatetags\breadcrumbs.py:18 .\main\views.py:37
+#: .\main\templatetags\breadcrumbs.py:18 .\main\views.py:66
 #: .\templates\base.html:53
 msgid "Портфолио"
 msgstr "Portfolio"
@@ -89,96 +89,96 @@ msgstr ""
 "Phone: +7 (999) 999-99-!!\n"
 "Email: info@ruad!!.ru"
 
-#: .\main\views.py:26
+#: .\main\views.py:43
 msgid "RuAd - О компании"
 msgstr "RuAd - About Us"
 
-#: .\main\views.py:28
-msgid "Текст о том, почему этот магазин такой классный"
-msgstr "Text about why this store is so great"
+#: .\main\views.py:45
+msgid "Текст о том, почему это агенство такое классное"
+msgstr "Text about why this agency is so great"
 
-#: .\main\views.py:36
+#: .\main\views.py:65
 msgid "RuAd - Портфолио"
 msgstr "RuAd - Portfolio"
 
-#: .\main\views.py:38
+#: .\main\views.py:67
 msgid "Данная страница находится в разработке!"
 msgstr "This page is under construction!"
 
-#: .\main\views.py:45
+#: .\main\views.py:85
 msgid "RuAd - Доставка и оплата"
 msgstr "RuAd - Delivery & Payment"
 
-#: .\main\views.py:46
+#: .\main\views.py:86
 msgid "Информация о доставке и оплате"
 msgstr "Delivery and Payment Information"
 
-#: .\main\views.py:47
+#: .\main\views.py:87
 msgid ""
 "Мы доставляем по всей России. Сроки зависят от региона. Возможен самовывоз"
 msgstr ""
 "We deliver across Russia. Delivery times depend on the region. Pickup is "
 "possible"
 
-#: .\main\views.py:48
+#: .\main\views.py:88
 msgid ""
 "Оплата возможна картой, наличными при получении, банковским переводом, через "
 "СПБ."
 msgstr "Payment can be made by card, cash on delivery, bank transfer, via SPB."
 
-#: .\main\views.py:55
+#: .\main\views.py:107
 msgid "RuAd - Контакты"
 msgstr "RuAd - Contacts"
 
-#: .\main\views.py:56
+#: .\main\views.py:108
 msgid "Контактная информация"
 msgstr "Contact Information"
 
-#: .\main\views.py:57
+#: .\main\views.py:109
 msgid "г. Москва, ул. Примерная, 10"
 msgstr "Moscow, Sample Street 10"
 
-#: .\main\views.py:58
+#: .\main\views.py:110
 msgid "+7 (999) 999-99-!!"
 msgstr "+7 (999) 999-99-!!"
 
-#: .\main\views.py:59
+#: .\main\views.py:111
 msgid "info@ruad!!.ru"
 msgstr "info@ruad!!.ru"
 
-#: .\services\models.py:6 .\services\models.py:24
+#: .\services\models.py:6 .\services\models.py:26
 msgid "Название"
 msgstr "Name"
 
-#: .\services\models.py:7 .\services\models.py:25
+#: .\services\models.py:7 .\services\models.py:27
 msgid "URL"
 msgstr "URL"
 
-#: .\services\models.py:11
+#: .\services\models.py:12
 msgid "Категорию"
 msgstr "Category"
 
-#: .\services\models.py:12
+#: .\services\models.py:13
 msgid "Категории"
 msgstr "Categories"
 
-#: .\services\models.py:26
+#: .\services\models.py:28
 msgid "Описание"
 msgstr "Description"
 
-#: .\services\models.py:27
+#: .\services\models.py:29
 msgid "Изображение"
 msgstr "Image"
 
-#: .\services\models.py:28
+#: .\services\models.py:30
 msgid "Категория"
 msgstr "Category"
 
-#: .\services\models.py:33
+#: .\services\models.py:35
 msgid "Вид"
 msgstr "Type"
 
-#: .\services\models.py:34
+#: .\services\models.py:36
 msgid "Виды"
 msgstr "Types"
 
@@ -221,6 +221,5 @@ msgstr "RuAd - Services"
 msgid "Поиск"
 msgstr "Search"
 
-#: .\templates\base.html:106
-msgid "Все услуги"
-msgstr "All Services"
+#~ msgid "Все услуги"
+#~ msgstr "All Services"

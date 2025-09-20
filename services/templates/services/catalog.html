@@ -63,28 +63,28 @@
 
 </div>
 <!-- Пагинация -->
-{% if services %}
-    <nav aria-label="Page navigation example">
-      <div class="d-flex justify-content-center my-4">
-        <ul class="pagination">
-          <li class="page-item {% if not services.has_previous %}disabled{% endif %}">
-            <a class="page-link" href="{% if services.has_previous %}?{% change_params page=services.previous_page_number %}{% else %}#{% endif %}">{% trans "Назад" %}</a>
-          </li>
+{% if page_obj %}
+<nav aria-label="Page navigation example">
+  <div class="d-flex justify-content-center my-4">
+    <ul class="pagination">
+      <li class="page-item {% if not page_obj.has_previous %}disabled{% endif %}">
+        <a class="page-link" href="{% if page_obj.has_previous %}?{% change_params page=page_obj.previous_page_number %}{% else %}#{% endif %}">{% trans "Назад" %}</a>
+      </li>
 
-          {% for page in services.paginator.page_range %}
-            {% if page >= services.number|add:-2 and page <= services.number|add:2 %}
-              <li class="page-item {% if services.number == page %} active {% endif %}">
-                <a class="page-link" href="?{% change_params page=page %}">{{ page }}</a>
-              </li>
-            {% endif %}
-          {% endfor %}
-
-          <li class="page-item {% if not services.has_next %}disabled{% endif %}">
-            <a class="page-link" href="{% if services.has_next %}?{% change_params page=services.next_page_number %}{% else %}#{% endif %}">{% trans "Следующая" %}</a>
+      {% for page in page_obj.paginator.page_range %}
+        {% if page >= page_obj.number|add:-2 and page <= page_obj.number|add:2 %}
+          <li class="page-item {% if page_obj.number == page %} active {% endif %}">
+            <a class="page-link" href="?{% change_params page=page %}">{{ page }}</a>
           </li>
-        </ul>
-      </div>
-    </nav>
+        {% endif %}
+      {% endfor %}
+
+      <li class="page-item {% if not page_obj.has_next %}disabled{% endif %}">
+        <a class="page-link" href="{% if page_obj.has_next %}?{% change_params page=page_obj.next_page_number %}{% else %}#{% endif %}">{% trans "Следующая" %}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 {% endif %}
 
 {% endblock %}
