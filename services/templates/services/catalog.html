@@ -7,9 +7,9 @@
 {% block content %}
 <div class="row">
 
-    {% if request.GET.q %}
+{% if query %}
     <h3 class="mt-4">
-        {% blocktrans with query=request.GET.q %}
+        {% blocktrans with query=query %}
             Результаты поиска по запросу {{ query }}
         {% endblocktrans %}
     </h3>

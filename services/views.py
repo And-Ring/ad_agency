@@ -39,6 +39,7 @@ class CatalogView(ListView):
         context = super().get_context_data(**kwargs)
         context['title'] = _('RuAd - Услуги')
         context['slug_url'] = self.kwargs.get('category_slug')
+        context['query'] = self.request.GET.get('q', '')
         # context['categories'] = Categories.objects.all()
 
         # --- Кэшируем категории с учётом языка ---
