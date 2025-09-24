@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-14 18:08+0200\n"
+"POT-Creation-Date: 2025-09-24 17:19+0200\n"
 "PO-Revision-Date: 2025-09-08 12:56+0200\n"
 "Last-Translator: Your Name <you@example.com>\n"
 "Language-Team: German\n"
@@ -12,17 +12,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\ad_agency\settings.py:129
+#: .\ad_agency\settings.py:144
 msgid "Русский"
 msgstr "Russisch"
 
-#: .\ad_agency\settings.py:130
+#: .\ad_agency\settings.py:145
 msgid "English"
 msgstr "Englisch"
 
-#: .\ad_agency\settings.py:131
+#: .\ad_agency\settings.py:146
 msgid "Deutsch"
 msgstr "Deutsch"
+
+#: .\feedback\forms.py:15 .\feedback\models.py:5
+msgid "Имя"
+msgstr "Name"
+
+#: .\feedback\forms.py:16 .\feedback\models.py:6
+msgid "Электронная почта"
+msgstr "E-Mail"
+
+#: .\feedback\forms.py:17 .\feedback\models.py:7
+msgid "Сообщение"
+msgstr "Nachricht"
+
+#: .\feedback\templates\feedback\feedback_form.html:5
+#: .\main\templates\main\contacts.html:15 .\main\templatetags\breadcrumbs.py:19
+#: .\templates\base.html:63
+msgid "Обратная связь"
+msgstr "Feedback"
+
+#: .\feedback\templates\feedback\feedback_form.html:10
+#: .\main\templates\main\contacts.html:19
+msgid "Отправить"
+msgstr "Absenden"
+
+#: .\feedback\templates\feedback\thanks.html:6
+msgid "Спасибо за ваше сообщение!"
+msgstr "Vielen Dank für Ihre Nachricht!"
+
+#: .\feedback\templates\feedback\thanks.html:7
+msgid "Мы свяжемся с вами в ближайшее время."
+msgstr "Wir werden uns in Kürze bei Ihnen melden."
+
+#: .\feedback\templates\feedback\thanks.html:8
+msgid "Вернуться на главную"
+msgstr "Zurück zur Startseite"
 
 #: .\main\templates\main\contacts.html:12
 msgid "Адрес:"
@@ -45,41 +80,41 @@ msgid "Оплата"
 msgstr "Bezahlung"
 
 #: .\main\templatetags\breadcrumbs.py:14 .\services\apps.py:8
-#: .\templates\base.html:100
+#: .\templates\base.html:105
 msgid "Услуги"
 msgstr "Services"
 
-#: .\main\templatetags\breadcrumbs.py:15 .\main\views.py:44
-#: .\templates\base.html:50
+#: .\main\templatetags\breadcrumbs.py:15 .\main\views.py:46
+#: .\templates\base.html:51
 msgid "О компании"
 msgstr "Über uns"
 
-#: .\main\templatetags\breadcrumbs.py:16 .\templates\base.html:59
+#: .\main\templatetags\breadcrumbs.py:16 .\templates\base.html:60
 msgid "Контакты"
 msgstr "Kontakte"
 
-#: .\main\templatetags\breadcrumbs.py:17 .\templates\base.html:56
+#: .\main\templatetags\breadcrumbs.py:17 .\templates\base.html:57
 msgid "Доставка и оплата"
 msgstr "Versand & Zahlung"
 
-#: .\main\templatetags\breadcrumbs.py:18 .\main\views.py:66
-#: .\templates\base.html:53
+#: .\main\templatetags\breadcrumbs.py:18 .\main\views.py:68
+#: .\templates\base.html:54
 msgid "Портфолио"
 msgstr "Portfolio"
 
-#: .\main\templatetags\breadcrumbs.py:57 .\templates\base.html:47
+#: .\main\templatetags\breadcrumbs.py:58 .\templates\base.html:48
 msgid "Главная"
 msgstr "Start"
 
-#: .\main\views.py:12
+#: .\main\views.py:14
 msgid "RuAd - Главная"
 msgstr "RuAd - Start"
 
-#: .\main\views.py:13
+#: .\main\views.py:15
 msgid "Рекламное агенство \"RussianAdvertising\""
 msgstr "Werbeagentur \"RussianAdvertising\""
 
-#: .\main\views.py:15
+#: .\main\views.py:17
 msgid ""
 "Адрес: г. Москва, ул. Примерная, 10\n"
 "Телефон: +7 (999) 999-99-!!\n"
@@ -89,61 +124,61 @@ msgstr ""
 "Telefon: +7 (999) 999-99-!!\n"
 "E-Mail: info@ruad!!.ru"
 
-#: .\main\views.py:43
+#: .\main\views.py:45
 msgid "RuAd - О компании"
 msgstr "RuAd - Über uns"
 
-#: .\main\views.py:45
+#: .\main\views.py:47
 msgid "Текст о том, почему это агенство такое классное"
 msgstr "Text darüber, warum diese Agentur so großartig ist"
 
-#: .\main\views.py:65
+#: .\main\views.py:67
 msgid "RuAd - Портфолио"
 msgstr "RuAd - Portfolio"
 
-#: .\main\views.py:67
+#: .\main\views.py:69
 msgid "Данная страница находится в разработке!"
 msgstr "Diese Seite befindet sich in der Entwicklung!"
 
-#: .\main\views.py:85
+#: .\main\views.py:87
 msgid "RuAd - Доставка и оплата"
 msgstr "RuAd - Versand & Zahlung"
 
-#: .\main\views.py:86
+#: .\main\views.py:88
 msgid "Информация о доставке и оплате"
 msgstr "Informationen zu Lieferung und Bezahlung"
 
-#: .\main\views.py:87
+#: .\main\views.py:89
 msgid ""
 "Мы доставляем по всей России. Сроки зависят от региона. Возможен самовывоз"
 msgstr ""
 "Wir liefern in ganz Russland. Lieferzeiten hängen von der Region ab. "
 "Selbstabholung möglich"
 
-#: .\main\views.py:88
+#: .\main\views.py:90
 msgid ""
 "Оплата возможна картой, наличными при получении, банковским переводом, через "
 "СПБ."
 msgstr ""
 "Bezahlung möglich mit Karte, bar bei Lieferung, Banküberweisung, über SPB."
 
-#: .\main\views.py:107
+#: .\main\views.py:109
 msgid "RuAd - Контакты"
 msgstr "RuAd - Kontakte"
 
-#: .\main\views.py:108
+#: .\main\views.py:110
 msgid "Контактная информация"
 msgstr "Kontaktinformationen"
 
-#: .\main\views.py:109
+#: .\main\views.py:111
 msgid "г. Москва, ул. Примерная, 10"
 msgstr "Moskau, Musterstraße 10"
 
-#: .\main\views.py:110
+#: .\main\views.py:112
 msgid "+7 (999) 999-99-!!"
 msgstr "+7 (999) 999-99-!!"
 
-#: .\main\views.py:111
+#: .\main\views.py:113
 msgid "info@ruad!!.ru"
 msgstr "info@ruad!!.ru"
 
@@ -214,11 +249,11 @@ msgstr "Schließen"
 msgid "Изображение 1"
 msgstr "Bild 1"
 
-#: .\services\views.py:26
+#: .\services\views.py:40
 msgid "RuAd - Услуги"
 msgstr "RuAd - Services"
 
-#: .\templates\base.html:64
+#: .\templates\base.html:68
 msgid "Поиск"
 msgstr "Suche"
 

@@ -46,9 +46,17 @@ INSTALLED_APPS = [
 
     'modeltranslation',  # обязательно выше apps
 
+    'feedback',
     'main',
     'services',
+    'django_recaptcha',
 ]
+
+RECAPTCHA_PUBLIC_KEY = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+RECAPTCHA_PRIVATE_KEY = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
+
+SILENCED_SYSTEM_CHECKS = ['django_recaptcha.recaptcha_test_key_error']
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

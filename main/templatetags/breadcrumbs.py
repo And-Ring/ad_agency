@@ -16,6 +16,7 @@ def get_name_by_slug(slug):
         'contacts': _('Контакты'),
         'delivery-payment': _('Доставка и оплата'),
         'portfolio': _('Портфолио'),
+        'feedback': _('Обратная связь'),
         
     }
 

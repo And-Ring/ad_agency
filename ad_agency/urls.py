@@ -14,6 +14,7 @@ urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path("", include("main.urls", namespace='main')),
     path("catalog/", include("services.urls", namespace='catalog')),
+    path('feedback/', include('feedback.urls')),
 )
 
 if settings.DEBUG:

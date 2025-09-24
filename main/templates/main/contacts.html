@@ -12,6 +12,11 @@
     <p><strong>{% trans "Адрес:" %}</strong> {{ address }}</p>
     <p><strong>{% trans "Телефон:" %}</strong> {{ phone }}</p>
     <p><strong>{% trans "Email:" %}</strong> {{ email }}</p>
-
+    <h3>{% trans "Обратная связь" %}</h3>
+    <form method="post" action="{% url 'feedback:form' %}">
+        {% csrf_token %}
+        {{ feedback_form.as_p }}
+        <button class="btn btn-outline-secondary" type="submit">{% trans "Отправить" %}</button>
+    </form>
 </div>
 {% endblock %}

@@ -3,6 +3,8 @@
 from django.utils.translation import gettext as _
 from django.views.generic import TemplateView
 
+from feedback.forms import FeedbackForm
+
 
 class IndexView(TemplateView):
     template_name = 'main/index.html'
@@ -109,7 +111,18 @@ class ContactsView(TemplateView):
         context['address'] = _('г. Москва, ул. Примерная, 10')
         context['phone'] = _('+7 (999) 999-99-!!')
         context['email'] = _('info@ruad!!.ru')
+        context['feedback_form'] = FeedbackForm()
         return context
+
+    def post(self, request, *args, **kwargs):
+        form = FeedbackForm(request.POST)
+        context = self.get_context_data()
+        if form.is_valid():
+            form.save()
+            context['success'] = True
+        else:
+            context['feedback_form'] = form
+        return self.render_to_response(context)
 
 
 # def contacts(request):

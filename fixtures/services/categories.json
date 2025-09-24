@@ -7,7 +7,8 @@
     "name_ru": "Все услуги",
     "name_en": "All Services",
     "name_de": "Alle Services",
-    "slug": "all-services"
+    "slug": "all-services",
+    "order": 0
   }
 },
 {
@@ -18,7 +19,8 @@
     "name_ru": "Наружная реклама",
     "name_en": "Outdoor Advertising",
     "name_de": "Außenwerbung",
-    "slug": "outdoor-advertising"
+    "slug": "outdoor-advertising",
+    "order": 1
   }
 },
 {
@@ -29,7 +31,8 @@
     "name_ru": "Интерьерная реклама",
     "name_en": "Interior Advertising",
     "name_de": "Innenwerbung",
-    "slug": "interior-advertising"
+    "slug": "interior-advertising",
+    "order": 2
   }
 },
 {
@@ -40,7 +43,8 @@
     "name_ru": "Неоновые вывески",
     "name_en": "Neon Signs",
     "name_de": "Neonschilder",
-    "slug": "neon-signs"
+    "slug": "neon-signs",
+    "order": 3
   }
 },
 {
@@ -51,7 +55,8 @@
     "name_ru": "Информационные стенды",
     "name_en": "Information Stands",
     "name_de": "Informationsständer",
-    "slug": "information-stands"
+    "slug": "information-stands",
+    "order": 4
   }
 },
 {
@@ -62,7 +67,8 @@
     "name_ru": "Таблички",
     "name_en": "Signs",
     "name_de": "Schilder",
-    "slug": "signs"
+    "slug": "signs",
+    "order": 5
   }
 },
 {
@@ -73,7 +79,8 @@
     "name_ru": "Широкоформатная печать",
     "name_en": "Large Format Printing",
     "name_de": "Großformatdruck",
-    "slug": "large-format-printing"
+    "slug": "large-format-printing",
+    "order": 6
   }
 },
 {
@@ -84,7 +91,8 @@
     "name_ru": "ЧПУ резка и фрезеровка",
     "name_en": "CNC Cutting and Milling",
     "name_de": "CNC-Schneiden und Fräsen",
-    "slug": "cnc-cutting-and-milling"
+    "slug": "cnc-cutting-and-milling",
+    "order": 7
   }
 },
 {
@@ -95,7 +103,8 @@
     "name_ru": "Маркировка и гравировка",
     "name_en": "Marking and Engraving",
     "name_de": "Markierung und Gravur",
-    "slug": "marking-and-engraving"
+    "slug": "marking-and-engraving",
+    "order": 8
   }
 },
 {
@@ -106,7 +115,8 @@
     "name_ru": "Световые панели",
     "name_en": "Light Panels",
     "name_de": "Leuchtplatten",
-    "slug": "light-panels"
+    "slug": "light-panels",
+    "order": 9
   }
 },
 {
@@ -117,7 +127,8 @@
     "name_ru": "Монтаж наружной рекламы",
     "name_en": "Outdoor Advertising Installation",
     "name_de": "Außenwerbung Montage",
-    "slug": "outdoor-advertising-installation"
+    "slug": "outdoor-advertising-installation",
+    "order": 10
   }
 }
 ]

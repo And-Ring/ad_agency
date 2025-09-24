@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="text-center my-5">
+    <h2>{% trans "Спасибо за ваше сообщение!" %}</h2>
+    <p>{% trans "Мы свяжемся с вами в ближайшее время." %}</p>
+    <a href="{% url 'main:index' %}" class="btn btn-outline-secondary" type="submit">{% trans "Вернуться на главную" %}</a>
+</div>
+{% endblock %}
