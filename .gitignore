@@ -1,9 +1,87 @@
-.idea/
+# Python
 __pycache__/
 *.py[cod]
-*.sqlite3
+*.pyo
+*.pyd
+*.pyc
+*.so
+
+# Virtual environments
 venv/
-media/
-.vscode/
+env/
+ENV/
+.venv/
+
+# Django
 *.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+# Если используешь collectstatic
+/static/
+
+# Django migrations (если не хочешь хранить)
+**/migrations/*.py
+!/migrations/__init__.py
+
+# Environment variables
 *.env
+.env.*
+!.env.example   # если есть пример для разработки
+
+# Docker
+docker-compose.override.yml
+docker/*.env
+docker/*.log
+*.log
+
+# PostgreSQL dumps
+*.dump
+*.sql
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Security-sensitive files
+*.pem
+*.crt
+*.key
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+
+# Pytest
+.pytest_cache/
+
+# Node / frontend (если есть)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Others
+*.swp
+*.swo

@@ -1,0 +1,28 @@
+# Виртуальное окружение и зависимости
+venv/
+__pycache__/
+*.pyc
+
+# Git
+.git
+.gitignore
+
+# Docker
+.dockerignore
+
+# Секреты и конфиги
+.env*
+*.pem
+*.key
+
+# Кэш и статика
+media/
+staticfiles/
+__pycache__/
+
+# IDE и системные файлы
+*.log
+*.sqlite3
+.idea/
+.vscode/
+.DS_Store
