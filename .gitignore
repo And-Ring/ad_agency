@@ -6,6 +6,9 @@ __pycache__/
 *.pyc
 *.so
 
+# Все виды кэша
+*cache/
+
 # Virtual environments
 venv/
 env/
