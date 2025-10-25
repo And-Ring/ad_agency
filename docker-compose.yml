@@ -12,8 +12,8 @@ services:
   web:
     build:
       context: .
-      dockerfile: docker/web/Dockerfile
-    volumes:eq
+      dockerfile: Dockerfile
+    volumes:
       - .:/app
       - ./staticfiles:/app/staticfiles
     ports:

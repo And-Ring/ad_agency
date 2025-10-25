@@ -26,3 +26,8 @@ __pycache__/
 .idea/
 .vscode/
 .DS_Store
+
+# PostgreSQL dumps и бэкапы
+*.sql
+dump/
+backups/

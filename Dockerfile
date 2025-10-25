@@ -13,7 +13,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-COPY docker/web/entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 EXPOSE 8000
