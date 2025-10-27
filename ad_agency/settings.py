@@ -165,10 +165,13 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 if DEBUG:
-    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'ad_agency', 'static')]
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 else:
+    # В продакшн тоже указываем папку static, чтобы collectstatic копировал deps
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 MEDIA_URL = '/media/'
 
