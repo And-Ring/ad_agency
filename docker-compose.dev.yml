@@ -1,0 +1,10 @@
+services:
+  web:
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+      - ./staticfiles:/app/staticfiles
+    env_file:
+      - .env.dev
+    ports:
+      - "8000:8000"

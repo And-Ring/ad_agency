@@ -11,6 +11,9 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+import dotenv
+dotenv.load_dotenv(dotenv_path=".env.dev" if os.environ.get("DEBUG", "1") == "1" else ".env.prod")
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ad_agency.settings')
 
 application = get_wsgi_application()

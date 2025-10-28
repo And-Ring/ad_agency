@@ -14,4 +14,5 @@ class TypesAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'category')  # покажем категорию
     search_fields = ('name', 'description')   # поиск
     list_filter = ('category',)               # фильтр по категориям
-    prepopulated_fields = {'slug': ('name_en',)}
+    prepopulated_fields = {'slug': ('name',)}
+    fields = ['name', 'slug', 'description', 'image_path', 'category']

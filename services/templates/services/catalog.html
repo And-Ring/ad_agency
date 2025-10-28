@@ -26,11 +26,12 @@
     <div class="col-lg-4 col-md-6 p-4">
         <div class="card border-primary rounded custom-shadow">
 
-            {% if type.image %}
-                <img src='{{ type.image.url }}' class="card-img-top" alt="...">
-                {% else %}
-                <img src='{% static "deps/images/Not found image.png" %}' class="card-img-top" alt="{{ type.name }}">
+            {% if type.image_path %}
+                <img src="{% static type.image_path %}" class="card-img-top" alt="{{ type.name }}">
+            {% else %}
+                <img src="{% static 'deps/images/Not found image.png' %}" class="card-img-top" alt="{{ type.name }}">
             {% endif %}
+
 
             <div class="card-body">
                 <a href='{% url "services:types" category_slug=type.category.slug types_slug=type.slug %}'>

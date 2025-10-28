@@ -3,7 +3,7 @@ services:
     image: postgres:17
     restart: always
     env_file:
-      - .env.dev
+      - .env
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -13,15 +13,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
-      - .:/app
-      - ./staticfiles:/app/staticfiles
-    ports:
-      - "8000:8000"
     depends_on:
       - db
     env_file:
-      - .env.dev
+      - .env
+    ports:
+      - "8000:8000"
 
 volumes:
   postgres_data:

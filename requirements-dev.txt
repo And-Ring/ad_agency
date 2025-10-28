@@ -1,0 +1,11 @@
+-r requirements.txt
+
+django-debug-toolbar==5.2.0
+python-dotenv==1.1.1
+ipython
+pytest
+pytest-django
+coverage
+factory_boy
+faker
+django-extensions

@@ -3,31 +3,28 @@ venv/
 __pycache__/
 *.pyc
 
-# Git
-.git
-.gitignore
-
-# Docker
-.dockerignore
-
 # Секреты и конфиги
-.env*
+.env
+.env.*
+!.env.example
 *.pem
 *.key
 
 # Кэш и статика
 media/
 staticfiles/
-__pycache__/
 
 # IDE и системные файлы
-*.log
-*.sqlite3
 .idea/
 .vscode/
 .DS_Store
+*.log
+*.sqlite3
 
 # PostgreSQL dumps и бэкапы
 *.sql
 dump/
 backups/
+
+tests/
+requirements-dev.txt

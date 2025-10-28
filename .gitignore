@@ -1,91 +1,74 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.pyc
 *.so
-
-# Все виды кэша
-*cache/
 
 # Virtual environments
 venv/
 env/
-ENV/
 .venv/
 
 # Django
 *.log
 *.pot
-*.pyc
 *.sqlite3
 db.sqlite3
-media/
-staticfiles/
-# Если используешь collectstatic
-/staticfiles/
-#/static/
 
-# Django migrations (если не хочешь хранить)
+# Static and media (если не хранятся в репо)
+staticfiles/
+media/
+
+# Migrations (если не хранятся)
 **/migrations/*.py
 !/migrations/__init__.py
 
 # Environment variables
-*.env
+.env
 .env.*
-!.env.example   # если есть пример для разработки
+!.env.example
 
 # Docker
 docker-compose.override.yml
 docker/*.env
 docker/*.log
-*.log
 
 # PostgreSQL dumps
 *.dump
 *.sql
+dump/
+backups/
 
 # Build artifacts
 build/
 dist/
 *.egg-info/
 
-# Security-sensitive files
+# Security
 *.pem
 *.crt
 *.key
 
-# IDEs
+# IDEs and OS
 .idea/
 .vscode/
-*.sublime-project
-*.sublime-workspace
-
-# OS files
 .DS_Store
 Thumbs.db
 
-# Logs and temp files
-*.log
-*.tmp
-*.bak
-
-# Coverage reports
+# Coverage and test
 htmlcov/
 .coverage
 coverage.xml
+.pytest_cache/
 *.cover
 *.py,cover
 
-# Pytest
-.pytest_cache/
-
-# Node / frontend (если есть)
+# Node
 node_modules/
 npm-debug.log
 yarn-error.log
 
-# Others
+# Temp
+*.tmp
+*.bak
 *.swp
 *.swo

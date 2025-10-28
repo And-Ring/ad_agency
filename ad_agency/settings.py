@@ -20,10 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = os.environ.get('DEBUG', '0') == '1'
 
 hosts = os.environ.get('DJANGO_ALLOWED_HOSTS')
-if hosts:
-    ALLOWED_HOSTS = [h.strip() for h in hosts.split(',') if h.strip()]
-else:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = [h.strip() for h in hosts.split(',')] if hosts else ['localhost', '127.0.0.1']
 
 
 # Quick-start development settings - unsuitable for production
@@ -36,6 +33,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "insecure-dev-key")
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',  # обязательно выше apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,9 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     'django_cleanup.apps.CleanupConfig',
 
-    'debug_toolbar',
-
-    'modeltranslation',  # обязательно выше apps
+    # 'debug_toolbar',
 
     'feedback',
     'main',
@@ -72,8 +68,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
+
+if DEBUG:
+    INSTALLED_APPS += ['debug_toolbar']
+    MIDDLEWARE += ['debug_toolbar.middleware.DebugToolbarMiddleware']
 
 ROOT_URLCONF = 'ad_agency.urls'
 
@@ -84,6 +84,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -163,19 +164,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 if DEBUG:
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 else:
-    # В продакшн тоже указываем папку static, чтобы collectstatic копировал deps
-    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATICFILES_DIRS = []
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 
 INTERNAL_IPS = [
     # ...

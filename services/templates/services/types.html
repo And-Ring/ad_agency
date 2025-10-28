@@ -9,11 +9,10 @@
             <!-- Миниатюры -->
             <div class="col-md-4">
 
-                {% if types.image %}
-                    <img src="{{ types.image.url }}"
-                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                {% if types.image_path %}
+                    <img src="{% static types.image_path %}" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
                 {% else %}
-                    <img src='{% static "deps/images/Not found image.png" %}' class="card-img-top" alt="{{ types.name }}">
+                    <img src="{% static 'deps/images/Not found image.png' %}" class="card-img-top" alt="{{ types.name }}">
                 {% endif %}
 
             </div>
@@ -39,7 +38,11 @@
                         </div>
                         <div class="modal-body">
                             {% if types.image %}
-                                <img src="{{ types.image.url }}" class="img-fluid" alt="{% trans 'Изображение 1' %}">
+                                {% if types.image_path %}
+                                    <img src="{% static types.image_path %}" class="img-fluid" alt="{% trans 'Изображение 1' %}">
+                                {% else %}
+                                    <img src="{% static 'deps/images/Not found image.png' %}" class="img-fluid" alt="{% trans 'Изображение 1' %}">
+                                {% endif %}
                             {% endif %}
 
 
