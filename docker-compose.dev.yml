@@ -1,6 +1,13 @@
 services:
+  db:
+    env_file:
+      - .env.dev
+    ports:
+      - "5432:5432"
+
   web:
     command: python manage.py runserver 0.0.0.0:8000
+    entrypoint: ["bash", "entrypoint.dev.sh"]
     volumes:
       - .:/app
       - ./staticfiles:/app/staticfiles
