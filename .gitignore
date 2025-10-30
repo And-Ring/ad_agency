@@ -20,7 +20,6 @@ staticfiles/
 media/
 
 # Migrations (если не хранятся)
-**/migrations/*.py
 !/migrations/__init__.py
 
 # Environment variables
