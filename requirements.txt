@@ -8,3 +8,4 @@ django-modeltranslation==0.19.16
 django-recaptcha==4.1.0
 tzdata==2025.2
 sqlparse==0.5.3
+# python-dotenv==1.1.1

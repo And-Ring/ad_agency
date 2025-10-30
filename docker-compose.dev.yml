@@ -13,5 +13,3 @@ services:
       - ./staticfiles:/app/staticfiles
     env_file:
       - .env.dev
-    ports:
-      - "8000:8000"
