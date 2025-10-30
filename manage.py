@@ -3,8 +3,9 @@
 import os
 import sys
 
-import dotenv
-dotenv.load_dotenv(dotenv_path=".env.dev" if os.environ.get("DEBUG", "1") == "1" else ".env.prod")
+if os.environ.get("DEBUG") != "0":
+    import dotenv
+    dotenv.load_dotenv()
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ad_agency.settings')
