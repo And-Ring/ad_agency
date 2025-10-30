@@ -11,8 +11,13 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-import dotenv
-dotenv.load_dotenv(dotenv_path=".env.dev" if os.environ.get("DEBUG", "1") == "1" else ".env.prod")
+# Load .env only in non-production environments
+if os.environ.get("DEBUG", "1") != "0":
+    try:
+        import dotenv
+        dotenv.load_dotenv(dotenv_path=".env.dev")
+    except ImportError:
+        pass  # dotenv not installed — ignore silently
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ad_agency.settings')
 
