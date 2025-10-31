@@ -17,7 +17,6 @@ db.sqlite3
 
 # Static and media (если не хранятся в репо)
 staticfiles/
-media/
 
 # Migrations (если не хранятся)
 !/migrations/__init__.py
