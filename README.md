@@ -1,87 +1,100 @@
+# ad_agency
+
+Corporate website for a fictional advertising agency.  
+Built with Django, PostgreSQL, and Docker.
+
+**Live Demo:** [https://ad-agency.onrender.com](https://ad-agency.onrender.com)  
+**GitHub Repository:** [https://github.com/And-Ring/ad_agency](https://github.com/And-Ring/ad_agency)
+
+---
+
 ## English
 
-Corporate website for an advertising agency (portfolio project).  
-Demonstrates skills in Django, PostgreSQL, and Docker.
-
 ### About the Project
-`ad_agency` is a portfolio project built as a corporate website for a fictional advertising agency.  
-It showcases modern features and multi-language support.
+**ad_agency** is a portfolio project — a corporate website for a fictional advertising agency.  
+It demonstrates full functionality, multilingual support, and a modern tech stack.
 
-**Features:**  
+### Features
 - Services catalog with categories and types  
 - Portfolio of agency projects  
 - Contact/feedback form  
-- Service search functionality  
-- Multi-language support: English (EN), German (DE), Russian (RU)  
-- Admin panel for content management
+- Service search  
+- Pagination and breadcrumbs  
+- Multi-language support: EN, DE, RU  
+- Admin panel for content management  
+- Implemented with class-based views (CBV)
 
-**Technologies Used:**  
+### Technologies
 - Python / Django  
 - PostgreSQL (Dockerized)  
 - Docker & Docker Compose  
-- HTML / CSS / JavaScript  
+- HTML / CSS (Bootstrap + custom styles)  
+- JavaScript (Bootstrap components)  
 - i18n / multi-language support
 
-**Notes:**  
-- Static and media files are generated automatically and not stored in Git  
+### Notes
+- All files (CSS, JS, images) are stored in the repository and used during deployment on Render  
 - Portfolio project, not for commercial use  
+- PostgreSQL service on Render (temporary free plan)
 
 ---
 
 ## Deutsch
 
-Firmenwebsite für eine Werbeagentur (Portfolio-Projekt).  
-Demonstriert Fähigkeiten in Django, PostgreSQL und Docker.
-
 ### Über das Projekt
-`ad_agency` ist ein Portfolio-Projekt, das als Firmenwebsite für eine fiktive Werbeagentur erstellt wurde.  
-Es bietet moderne Funktionen und mehrsprachige Unterstützung.
+**ad_agency** ist ein Portfolio-Projekt – eine Firmenwebsite für eine fiktive Werbeagentur.  
+Zeigt moderne Funktionen und mehrsprachige Unterstützung.
 
-**Funktionen:**  
+### Funktionen
 - Dienstleistungskatalog mit Kategorien und Typen  
 - Portfolio von Agenturprojekten  
 - Kontakt-/Feedback-Formular  
 - Suchfunktion für Dienstleistungen  
-- Mehrsprachige Unterstützung: Englisch (EN), Deutsch (DE), Russisch (RU)  
-- Admin-Panel zur Inhaltsverwaltung
+- Paginierung und Breadcrumbs  
+- Mehrsprachige Unterstützung: EN, DE, RU  
+- Admin-Panel zur Inhaltsverwaltung  
+- Implementiert mit klassenbasierten Views
 
-**Verwendete Technologien:**  
+### Technologien
 - Python / Django  
 - PostgreSQL (Dockerized)  
 - Docker & Docker Compose  
-- HTML / CSS / JavaScript  
+- HTML / CSS (Bootstrap + eigene Stile)  
+- JavaScript (Bootstrap-Komponenten)  
 - i18n / Mehrsprachige Unterstützung
 
-**Hinweise:**  
-- Statische und Medien-Dateien werden automatisch generiert, nicht in Git gespeichert  
+### Hinweise
+- Alle Dateien (CSS, JS, Bilder) werden im Repository gespeichert und beim Deployment auf Render verwendet  
 - Portfolio-Projekt, nicht kommerziell  
+- PostgreSQL-Service auf Render (temporärer kostenloser Plan)
 
 ---
 
 ## Русский
 
-Корпоративный сайт рекламного агентства (портфолио-проект).  
-Демонстрация навыков в Django, PostgreSQL и Docker.
-
 ### О проекте
-`ad_agency` — учебный проект, созданный для портфолио.  
-Представляет корпоративный сайт рекламного агентства с современным функционалом и мультиязычной поддержкой.
+**ad_agency** — портфолио-проект.  
+Корпоративный сайт рекламного агентства с современным функционалом и мультиязычной поддержкой.
 
-**Функции:**  
+### Функции
 - Каталог услуг с категориями и типами  
 - Портфолио проектов агентства  
 - Форма обратной связи  
 - Поиск по услугам  
-- Многоязычная поддержка: EN, DE, RU  
-- Админка для управления контентом
+- Пагинация и хлебные крошки  
+- Мультиязычная поддержка: EN, DE, RU  
+- Админка для управления контентом  
+- Реализовано на классовых представлениях (CBV)
 
-**Используемые технологии:**  
+### Технологии
 - Python / Django  
 - PostgreSQL (Dockerized)  
 - Docker & Docker Compose  
-- HTML / CSS / JavaScript  
+- HTML / CSS (Bootstrap + собственные стили)  
+- JavaScript (Bootstrap-компоненты)  
 - i18n — мультиязычная поддержка
 
-**Особенности:**  
-- Статика и медиафайлы генерируются автоматически и не хранятся в Git  
-- Проект учебный/портфолио, не коммерческий  
+### Особенности
+- Все файлы (CSS, JS, изображения) хранятся в репозитории и используются при деплое на Render  
+- Портфолио-проект, не коммерческий  
+- PostgreSQL в Render (временно на бесплатном плане)
