@@ -1,17 +1,19 @@
 # ad_agency
 
-![Django](https://img.shields.io/badge/Django-4.2-0A0A0A?style=flat)
+![Django](https://img.shields.io/badge/Django-5.2.1-0A0A0A?style=flat)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Supabase-0A0A0A?style=flat)
-![Docker](https://img.shields.io/badge/Docker-ready-0A0A0A?style=flat)
+![Docker](https://img.shields.io/badge/Docker-used-0A0A0A?style=flat)
 
 Corporate website for a fictional advertising agency.  
 Built with Django, PostgreSQL, and Docker.
 
 **Live Demo:** [https://ad-agency.onrender.com](https://ad-agency.onrender.com)  
 
-⚠️ The demo may take 20–30 seconds to wake up on the first request. Render free plan puts services to sleep when inactive. Just wait a few seconds — the site will start automatically.
-⚠️ На бесплатном плане Render сервис «засыпает». Первый запрос может грузиться 20–30 секунд — это нормально.
-⚠️ Render Free Tier versetzt den Dienst in den Schlaf. Der erste Aufruf kann 20–30 Sekunden dauern.
+**English:** ⚠️ The demo may take 20–30 seconds to wake up on the first request. Render free plan puts services to sleep when inactive.
+
+**Русский:** ⚠️ На бесплатном плане Render сервис «засыпает». Первый запрос может грузиться 20–30 секунд — это нормально.
+
+**Deutsch:** ⚠️ Render Free Tier versetzt den Dienst in den Schlaf. Der erste Aufruf kann 20–30 Sekunden dauern.
 
 **GitHub Repository:** [https://github.com/And-Ring/ad_agency](https://github.com/And-Ring/ad_agency)
 
@@ -75,7 +77,7 @@ Zeigt moderne Funktionen und mehrsprachige Unterstützung.
 ### Hinweise
 - Alle Dateien (CSS, JS, Bilder) werden aus dem Repository bereitgestellt.
 - Das Projekt ist auf dem Render Free Tier bereitgestellt. Der erste Aufruf kann 20–30 Sekunden dauern, da der Dienst "aufwacht".
-- PostgreSQL läuft in Supabase (Free Tier); lokal wird eine Docker-Version 
+- PostgreSQL läuft in Supabase (Free Tier); lokal wird eine Docker-Version. 
 
 ---
 
@@ -106,4 +108,4 @@ Zeigt moderne Funktionen und mehrsprachige Unterstützung.
 ### Особенности
 - Все статические файлы (CSS, JS, изображения) хранятся в репозитории.
 - Проект развернут на Render (бесплатный план). Первый запрос может загружаться 20–30 секунд — сервис «просыпается».
-- PostgreSQL размещена в Supabase; локально используется Docker-версия базы
+- PostgreSQL размещена в Supabase; локально используется Docker-версия базы.
