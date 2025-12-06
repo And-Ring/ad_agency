@@ -1,9 +1,18 @@
 # ad_agency
 
+![Django](https://img.shields.io/badge/Django-4.2-0A0A0A?style=flat)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Supabase-0A0A0A?style=flat)
+![Docker](https://img.shields.io/badge/Docker-ready-0A0A0A?style=flat)
+
 Corporate website for a fictional advertising agency.  
 Built with Django, PostgreSQL, and Docker.
 
 **Live Demo:** [https://ad-agency.onrender.com](https://ad-agency.onrender.com)  
+
+⚠️ The demo may take 20–30 seconds to wake up on the first request. Render free plan puts services to sleep when inactive. Just wait a few seconds — the site will start automatically.
+⚠️ На бесплатном плане Render сервис «засыпает». Первый запрос может грузиться 20–30 секунд — это нормально.
+⚠️ Render Free Tier versetzt den Dienst in den Schlaf. Der erste Aufruf kann 20–30 Sekunden dauern.
+
 **GitHub Repository:** [https://github.com/And-Ring/ad_agency](https://github.com/And-Ring/ad_agency)
 
 ---
@@ -25,17 +34,17 @@ It demonstrates full functionality, multilingual support, and a modern tech stac
 - Implemented with class-based views (CBV)
 
 ### Technologies
-- Python / Django  
-- PostgreSQL (Dockerized)  
-- Docker & Docker Compose  
+- Python / Django
+- PostgreSQL (Dockerized for local development, Supabase in production)
+- Docker & Docker Compose 
 - HTML / CSS (Bootstrap + custom styles)  
 - JavaScript (Bootstrap components)  
 - i18n / multi-language support
 
 ### Notes
-- All files (CSS, JS, images) are stored in the repository and used during deployment on Render  
-- Portfolio project, not for commercial use  
-- PostgreSQL service on Render (temporary free plan)
+- All static files (CSS, JS, images) are stored in the repository and used during deployment.
+- The project is deployed on the Render free tier. The service may take 20–30 seconds to wake up on the first request.
+- PostgreSQL is hosted on Supabase (free tier); Dockerized PostgreSQL is used locally.
 
 ---
 
@@ -57,16 +66,16 @@ Zeigt moderne Funktionen und mehrsprachige Unterstützung.
 
 ### Technologien
 - Python / Django  
-- PostgreSQL (Dockerized)  
+- PostgreSQL (Dockerized für lokale Entwicklung, Supabase in der Produktion)  
 - Docker & Docker Compose  
 - HTML / CSS (Bootstrap + eigene Stile)  
 - JavaScript (Bootstrap-Komponenten)  
 - i18n / Mehrsprachige Unterstützung
 
 ### Hinweise
-- Alle Dateien (CSS, JS, Bilder) werden im Repository gespeichert und beim Deployment auf Render verwendet  
-- Portfolio-Projekt, nicht kommerziell  
-- PostgreSQL-Service auf Render (temporärer kostenloser Plan)
+- Alle Dateien (CSS, JS, Bilder) werden aus dem Repository bereitgestellt.
+- Das Projekt ist auf dem Render Free Tier bereitgestellt. Der erste Aufruf kann 20–30 Sekunden dauern, da der Dienst "aufwacht".
+- PostgreSQL läuft in Supabase (Free Tier); lokal wird eine Docker-Version 
 
 ---
 
@@ -88,13 +97,13 @@ Zeigt moderne Funktionen und mehrsprachige Unterstützung.
 
 ### Технологии
 - Python / Django  
-- PostgreSQL (Dockerized)  
+- PostgreSQL (Docker — для локальной разработки, Supabase — в продакшене)  
 - Docker & Docker Compose  
 - HTML / CSS (Bootstrap + собственные стили)  
 - JavaScript (Bootstrap-компоненты)  
 - i18n — мультиязычная поддержка
 
 ### Особенности
-- Все файлы (CSS, JS, изображения) хранятся в репозитории и используются при деплое на Render  
-- Портфолио-проект, не коммерческий  
-- PostgreSQL в Render (временно на бесплатном плане)
+- Все статические файлы (CSS, JS, изображения) хранятся в репозитории.
+- Проект развернут на Render (бесплатный план). Первый запрос может загружаться 20–30 секунд — сервис «просыпается».
+- PostgreSQL размещена в Supabase; локально используется Docker-версия базы
